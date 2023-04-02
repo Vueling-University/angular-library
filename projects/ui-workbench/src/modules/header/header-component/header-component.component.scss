@@ -1,0 +1,95 @@
+.header-body {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: bisque;
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.2);
+}
+
+.leftSide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: 10.5em;
+  height: 2.3em;
+  // background-image: url("../../../assets/images/fifaLogo.png");
+  background-repeat: no-repeat;
+  background-size: 10em;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 3em;
+  margin-right: 1.5em;
+}
+
+.buttonDefault {
+  width: auto;
+  height: 100%;
+  background-color: bisque;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 1.2%;
+}
+
+.buttonDefault:hover {
+  background-color: black;
+  color: bisque;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 3em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.towards {
+  width: 100%;
+  max-height: 2.3em;
+  display: flex;
+  background-color: #9481B3;
+  color: bisque;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 10.2%;
+  border: none;
+  border-radius: 12.5%;
+}
+
+.towards:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.form-control-language {
+  width: fit-content;
+  justify-content: center;
+  height: auto;
+  font-size: large;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+  background-color: bisque;
+  border: none;
+  padding: 0.6em;
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}

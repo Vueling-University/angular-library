@@ -1,0 +1,75 @@
+.footer-background {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5% 0.5% 0.5% 0.5%;
+}
+
+.feather-linkedin {
+  color: bisque;
+  transition: 0.2s;
+}
+
+.feather-linkedin:hover {
+  color: #ccabff;
+}
+
+.feather-github {
+  color: bisque;
+  transition: 0.2s;
+}
+
+.feather-github:hover {
+  color: #ccabff;
+}
+
+.texts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: bisque;
+  font-family: "Franklin Gothic Small", "Arial Narrow", Arial, sans-serif;
+  padding: 0.5%;
+  font-size: medium;
+}
+
+.nameEffect {
+  transition: 0.2s;
+}
+
+.nameEffect:hover {
+  color: #ccabff;
+  cursor: pointer;
+}
+
+.mail {
+  color: bisque;
+  font-family: "Franklin Gothic Small", "Arial Narrow", Arial, sans-serif;
+  padding: 0.5% 0.5% 2.5% 0.5%;
+  font-size: medium;
+  transition: 0.2s;
+}
+
+.mail:hover {
+  color: #ccabff;
+  cursor: pointer;
+}

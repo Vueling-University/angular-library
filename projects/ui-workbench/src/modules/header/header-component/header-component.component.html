@@ -1,0 +1,25 @@
+<div class="header-body">
+  <div class="leftSide">
+    <div class="logo">
+      <ng-content select="[logo]"></ng-content>
+    </div>
+    <div
+      class="buttonDefault"
+      [routerLink]="items.router"
+      *ngFor="let items of links"
+    >
+      {{ items.name }}
+    </div>
+  </div>
+  <div class="rightSide">
+    <button class="towards" (click)="navigation.goBack()">
+      Back <span hidden>{{ navigation.getPreviousUrl() }}</span>
+    </button>
+    <div class="multiButton">
+      <select class="form-control-language">
+        <option>es</option>
+        <option>en</option>
+      </select>
+    </div>
+  </div>
+</div>
