@@ -1,0 +1,51 @@
+// Variables
+$color-black: #282a2b;
+$color-white: #ffffff;
+$color-vueling-grey: #4d4d4d;
+$color-vueling-primary: #ffcc00;
+
+// General
+body {
+ display: flex;
+ justify-content: center;
+ height: 80vh;
+ width: 100%;
+ overflow: hidden;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: $color-black;
+}
+
+// SVG
+.svg {
+ width: 900px;
+
+ &__character {
+  fill: $color-vueling-grey;
+ }
+
+ &__line {
+  fill: none;
+  stroke: $color-vueling-primary;
+  stroke-dasharray: 6;
+  stroke-width: 1;
+  stroke-linejoin: round;
+ }
+
+ &__dot {
+  fill: $color-vueling-primary;
+ }
+
+ &__plane {
+  transform: translate(-6px, -11px) rotate(25deg);
+  fill: $color-vueling-primary;
+  opacity: 0;
+ }
+
+ &__mask {
+  fill: none;
+  stroke: white;
+  stroke-width: 10;
+  stroke-dasharray: 480;
+  stroke-dashoffset: 480;
+ }
+}

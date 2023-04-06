@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import {
   FooterModule,
   BreadcrumbModule,
+  ErrorViewModule,
 } from 'projects/ui-workbench/src/public-api';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, FooterModule, BreadcrumbModule],
+  imports: [BrowserModule, AppRoutingModule, FooterModule, BreadcrumbModule, ErrorViewModule],
   providers: [],
   bootstrap: [AppComponent],
 })
