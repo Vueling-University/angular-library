@@ -20,14 +20,9 @@
     "module": "ES2022",
     "useDefineForClassFields": false,
     "paths": {
-      "ui-workbench": [
-        "dist/ui-workbench"
-      ]
+      "ui-workbench": ["dist/ui-workbench"]
     },
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
