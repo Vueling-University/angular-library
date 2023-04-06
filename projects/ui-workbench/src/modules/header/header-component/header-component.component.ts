@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-// import { TranslateService } from '@ngx-translate/core';
+import { Component, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NavigationServiceService } from './service/navigation-service/navigation-service.service';
 
 @Component({
@@ -10,26 +10,26 @@ import { NavigationServiceService } from './service/navigation-service/navigatio
 export class HeaderComponentComponent {
   @Input() links: LinksInterface[] = [];
   constructor(
-    // public translate: TranslateService,
+    public translate: TranslateService,
     public navigation: NavigationServiceService
   ) {
-    // translate.addLangs(['es', 'en', 'cat']);
-    // if (localStorage.getItem('locale')) {
-    //   translate.setDefaultLang(localStorage.getItem('locale') || '[]');
-    //   translate.use(localStorage.getItem('locale') || '[]');
-    // } else {
-    //   const browserLang = translate.getBrowserLang();
-    //   translate.setDefaultLang(browserLang || '[]');
-    //   translate.use(browserLang?.match(/es|en|cat/) ? browserLang : 'es');
-    //   localStorage.setItem('locale', browserLang || '[]');
-    // }
+    translate.addLangs(['es', 'en']);
+    if (localStorage.getItem('locale')) {
+      translate.setDefaultLang(localStorage.getItem('locale') || '[]');
+      translate.use(localStorage.getItem('locale') || '[]');
+    } else {
+      const browserLang = translate.getBrowserLang();
+      translate.setDefaultLang(browserLang || '[]');
+      translate.use(browserLang?.match(/es|en/) ? browserLang : 'es');
+      localStorage.setItem('locale', browserLang || '[]');
+    }
   }
 
   ngOnInit(): void {}
 
-  // switchLanguage(lang: string) {
-  //   this.translate.use(lang);
-  // }
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+  }
 }
 
 export interface LinksInterface {
