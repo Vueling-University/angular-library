@@ -10,7 +10,13 @@ import {
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, FooterModule, BreadcrumbModule, ErrorViewModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FooterModule,
+    BreadcrumbModule,
+    ErrorViewModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
