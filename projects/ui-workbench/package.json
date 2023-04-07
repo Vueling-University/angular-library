@@ -1,13 +1,11 @@
 {
   "name": "ui-workbench",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^15.2.5",
     "@angular/core": "^15.2.0"
   },
   "dependencies": {
-    "@ngx-translate/core": "^14.0.0",
-    "@ngx-translate/http-loader": "^7.0.0",
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
