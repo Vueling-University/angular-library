@@ -1,41 +1,32 @@
+@import "/src/styles.scss";
+
 .footer-background {
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: auto;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  bottom: 0;
+  left: 0;
+  background-color: $color-black;
 }
 
 .icons {
-  width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 1.5% 0.5% 0.5% 0.5%;
+  gap: 1.25em;
 }
 
-.feather-linkedin {
-  color: bisque;
-  transition: 0.2s;
+svg {
+  fill: $color-vueling-primary;
+  transition: 0.2s ease-in-out;
 }
 
-.feather-linkedin:hover {
-  color: #ccabff;
-}
-
-.feather-github {
-  color: bisque;
-  transition: 0.2s;
-}
-
-.feather-github:hover {
-  color: #ccabff;
+svg:hover {
+  fill: $color-vueling-grey;
+  transform: translateY(-20%);
 }
 
 .texts {
@@ -48,9 +39,10 @@
 }
 
 .name {
-  color: bisque;
-  font-family: "Franklin Gothic Small", "Arial Narrow", Arial, sans-serif;
-  padding: 0.5%;
+  color: $color-vueling-primary;
+  width: auto;
+  font-family: $font-family-default;
+  padding: 0.25%;
   font-size: medium;
 }
 
@@ -59,19 +51,20 @@
 }
 
 .nameEffect:hover {
-  color: #ccabff;
+  color: $color-vueling-grey;
   cursor: pointer;
 }
 
 .mail {
-  color: bisque;
-  font-family: "Franklin Gothic Small", "Arial Narrow", Arial, sans-serif;
+  color: $color-vueling-primary;
+  width: auto;
+  font-family: $font-family-default;
   padding: 0.5% 0.5% 2.5% 0.5%;
   font-size: medium;
   transition: 0.2s;
 }
 
 .mail:hover {
-  color: #ccabff;
+  color: $color-vueling-grey;
   cursor: pointer;
 }
