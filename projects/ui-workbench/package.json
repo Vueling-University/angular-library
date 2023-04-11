@@ -1,6 +1,6 @@
 {
   "name": "ui-workbench",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^15.2.5",
     "@angular/core": "^15.2.0"
