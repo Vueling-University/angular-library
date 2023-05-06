@@ -1,10 +1,9 @@
 //Colors variables:
 $color-black: #000000;
-$color-white: #FFFFFF;
-$color-vueling-grey: #4D4D4D;
-// $color-vueling-primary: #FFCC00;
-$color-starWars-primary: #EEDB00;
-$font-family-default: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+$color-white: #ffffff;
+$color-vueling-grey: #4d4d4d;
+$color-vueling-primary: #ffcc00;
+$font-family-default: Roboto, "Helvetica Neue", sans-serif;
 
 .footer-background {
   width: 100%;
@@ -15,7 +14,7 @@ $font-family-default: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
   align-items: center;
   bottom: 0;
   left: 0;
-  background-color: $color-black;
+  background-color: $color-vueling-grey;
 }
 
 .icons {
@@ -26,7 +25,7 @@ $font-family-default: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
 svg {
-  fill: $color-starWars-primary;
+  fill: $color-vueling-primary;
   transition: 0.2s ease-in-out;
 }
 
@@ -45,7 +44,7 @@ svg:hover {
 }
 
 .name {
-  color: $color-starWars-primary;
+  color: $color-vueling-primary;
   width: auto;
   font-family: $font-family-default;
   padding: 0.25%;
@@ -62,7 +61,7 @@ svg:hover {
 }
 
 .mail {
-  color: $color-starWars-primary;
+  color: $color-vueling-primary;
   width: auto;
   font-family: $font-family-default;
   padding: 0.5% 0.5% 2.5% 0.5%;
@@ -72,5 +71,22 @@ svg:hover {
 
 .mail:hover {
   color: $color-white;
-  // cursor: pointer;
+  cursor: pointer;
+}
+
+.date {
+  color: $color-vueling-primary;
+  width: auto;
+  font-family: $font-family-default;
+  padding: 0.5% 0.5% 2.5% 0.5%;
+  font-size: medium;
+}
+
+.dateEffect {
+  transition: 0.2s;
+}
+
+.dateEffect:hover {
+  color: $color-white;
+  cursor: pointer;
 }
